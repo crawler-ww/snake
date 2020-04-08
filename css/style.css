@@ -1,0 +1,62 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.content {
+  width: 640px;
+  height: 640px;
+  margin: 100px auto;
+  position: relative;
+  /*贪吃蛇面板*/
+}
+.content .btn {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+  z-index: 6;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.content .startbtn {
+  background: url(../images/startbtn.png) no-repeat;
+  background-position: center;
+}
+.content .pauseBtn {
+  background: url(../images/pausebtn.png) no-repeat;
+  background-position: center;
+  display: none;
+}
+.content #snakeWrap {
+  width: 640px;
+  height: 640px;
+  background-color: darkmagenta;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  outline: 2px dashed burlywood;
+  outline-offset: -15px;
+}
+.content #snakeWrap div {
+  width: 24px;
+  height: 24px;
+}
+.content #snakeWrap .snakeHead {
+  background: url(../images/snake.png) no-repeat;
+  background-size: cover;
+}
+.content #snakeWrap .snakeBody {
+  background-color: cyan;
+  border-radius: 50%;
+}
+.content #snakeWrap .food {
+  background: url(../images/apple.png) no-repeat;
+  background-size: covers;
+}
