@@ -3,8 +3,8 @@ body{
     margin: 0;
 }
 .content{
-    width: 640px;
-    height: 640px;
+    width: 600px;
+    height: 600px;
     margin: 100px auto;
     position: relative;
     .btn{
@@ -32,19 +32,20 @@ body{
     }
     /*贪吃蛇面板*/
     #snakeWrap{
-        width: 640px;
-        height: 640px;
+        width: 600px;
+        height: 600px;
         background-color: darkmagenta;
         left: 0;
         top: 0;
-        box-sizing: border-box;
-        padding: 20px;
+        // box-sizing: border-box;
+        border: 15px solid darkmagenta;
         border-radius: 10px;
         outline: 2px dashed burlywood;
         outline-offset: -15px;
+        position: relative;
         div{
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
         }
         .snakeHead{
             background:url(../images/snake.png) no-repeat;
@@ -53,10 +54,11 @@ body{
         .snakeBody{
             background-color: cyan;
             border-radius: 50%;
+            box-sizing: border-box;
         }
         .food{
             background: url(../images/apple.png) no-repeat;
-            background-size: covers;
+            background-size: cover;
         }
     }
 }
